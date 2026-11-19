@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+   <nav class="main-nav">
+    <a href="profil.html">Profil</a>
+    <a href="beranda.html">Beranda</a>
+    <a href="latihan.html">Pendaftaran</a>
+</nav>
+
+<body>
+
+    <h1 align="center" style="color: #3b86ff; margin: 0;">SMK BAKTI NUSANTARA 666</h1>
+        <p align="center">SAJUTA</p>
+        
+
+       
+
+        <header class="main-header" align="center">
+            <div class="header-container">
+                <h1 class="brand-title">SMK BAKTI NUSANTARA 666</h1>
+             
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="form-section">
+                <h2 class="section-title">Form Pendaftaran Siswa Baru</h2>
+                <p class="section-desc">Isi formulir di bawah ini dengan data yang benar dan lengkap</p>
+
+                <form action="proses.php" method="post" class="custom-form">
+
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap :</label>
+                        <input type="text" id="nama" placeholder="Nama lengkap siswa" required><br>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" placeholder="contoh@gmail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password :</label>
+                        <input type="password" id="password" placeholder="minimal 8 karakter" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tgl">Tanggal Lahir :</label>
+                        <input type="date" id="tgl" name="tanggal_lahir" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="group-label">Jenis Kelamin :</label>
+                        <div class="radio-group">
+                            <label class="inline-label"><input type="radio" name="jk" value="L" required>Laki
+                                Laki</label>
+                            <label class="inline-label"><input type="radio" name="jk" value="P"
+                                    required>Perempuan</label>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jurusan">Pilihan Jurusan:</label>
+                        <select id="jurusan" name="jurusan" required>
+                            <option value="">--- Pilih Jurusan ---</option>
+                            <option value="pplg">PPLG (Pengembangan Perangkat Lunak & Gim)</option>
+                            <option value="tjkt">TJKT (Teknik Jaringan Komputer & Telekomunikasi)</option>
+                            <option value="dkv">DKV (Desain Komunikasi Visual)</option>
+                        </select>
+                    </div>
+
+                    <!-- Textarea (Teks Panjang) -->
+                    <div class="form-group">
+                        <label for="alamat">Alamat Lengkap:</label><br>
+                        <textarea id="alamat" name="alamat" rows="4" placeholder="Alamat rumah lengkap"
+                            required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="group-label">Minat & Keahlian :
+                        </label>
+                        <div class="checkbox-group">
+                            <label class="inline-label">
+                                <input type="checkbox" name="minat" value="web">Web Development
+                            </label>
+
+                            <label class="inline-label">
+                                <input type="checkbox" name="minat" value="game">Game Development
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="sumbit" class="btn" btn-sumbit>Kirim</button>
+                        <button type="reset" class="btn" btn-reset>Reset</button>
+                    </div>
+
+
+
+                </form>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <div class="footer-container">
+                <p>&copy; 2026 SMK BAKTI NUSANTARA 666. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <h2 align="center" class="card" style="background-color: rgb(244, 61, 219); padding: 20px; border-radius: 8px;">Terima Kasih Sudah Mengunjungi Web SMK BAKTI NUSANTARA 666</h2>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
